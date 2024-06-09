@@ -54,7 +54,7 @@ include_once '../../vistas/templates/header.php'; ?>
 </div>
 <div class="row justify-content-center">
     <div class="col-lg-6">
-        <a href="../../controladores/grados/buscar.php?grados=<?= $_POST['grado'] ?>" class="btn btn-info">Volver al formulario</a>
+        <a href="../../controladores/tareas/buscar.php?grados=<?= $_POST['grado'] ?>" class="btn btn-info">Volver al formulario</a>
 </div>
 
 

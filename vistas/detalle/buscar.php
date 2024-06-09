@@ -9,22 +9,39 @@ require '../../modelos/Tareas.php';
 
 
 
-
-
-
-
 $asig_app = $_REQUEST['tar_id'] ?? null;
 $nombre = new Asignar(['asig_app' => $asig_app]);
 
 $nombres = $nombre->buscarnom();
 
+$resultado = [
+    'mensaje' => 'DATOS ENCONTRADOS',
+    'datos' => $nombres,    
+    'codigo' => 1
+];
 
-
+if (empty($nombres)) {
+    $resultado['mensaje'] = 'No hay datos';
+    $resultado['codigo'] = 0;
+}
 
 
 $tar_app = $_REQUEST['tar_id'] ?? null;
 $tarea = new Tareas(['tar_app' => $tar_app]);
 $tare = $tarea->buscartar();
+
+
+
+$resultado = [
+    'mensaje' => 'DATOS ENCONTRADOS',
+    'datos' => $tare,
+    'codigo' => 1
+];
+
+if (empty($tare)) {
+    $resultado['mensaje'] = 'No hay datos';
+    $resultado['codigo'] = 0;
+}
 
 
 $totalTareas = count($tare);
@@ -45,9 +62,13 @@ if (is_nan($porcentajeTrabajoRealizado)) {
     $porcentajeTrabajoRealizado = 0.00;
 }
 
-
+$alertas = ['danger', 'success', 'warning'];
 ?>
-
+<div class="row mb-4 justify-content-center">
+    <div class="col-lg-6 alert alert-<?= $alertas[$resultado['codigo'] ?? 1] ?>" role="alert">
+        <?= $resultado['mensaje'] ?? 'DATOS ENCONTRADOS' ?>
+    </div>
+</div>
 
 
 <body>

@@ -54,6 +54,7 @@ try {
                     <?php } ?>
                 </select>
             </div>
+            <br>
             <div class="row mb-3">
                 <div class="col">
                     <button type="submit" class="btn btn-info w-100">Buscar</button>

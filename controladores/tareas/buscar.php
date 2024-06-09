@@ -16,6 +16,11 @@ try {
         'datos' => $grados,
         'codigo' => 1
     ];
+    if (empty($grados)) {
+    
+        $resultado['mensaje'] = 'No hay datos';
+        $resultado['codigo'] = 0;
+    }
 } catch (Exception $e) {
     $resultado = [
         'mensaje' => 'OCURRIO UN ERROR EN LA EJECUCIÓN',
@@ -67,8 +72,8 @@ include_once '../../vistas/templates/header.php'; ?>
                                         Acciones
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="/controlAlumnos/vistas/tareas/modificar.php?tar_id=<?= base64_encode($tar['tar_id']) ?>"><i class="bi bi-pencil-square me-2"></i>Modificar</a></li>
-                                        <li><a class="dropdown-item" href="/controlAlumnos/controladores/tareas/eliminar.php?tar_id=<?= base64_encode($tar['tar_id']) ?>"><i class="bi bi-trash me-2"></i>Eliminar</a></li>
+                                        <li><a class="dropdown-item" href="/forma_D/vistas/tareas/modificar.php?tar_id=<?= base64_encode($tar['tar_id']) ?>"><i class="bi bi-pencil-square me-2"></i>Modificar</a></li>
+                                        <li><a class="dropdown-item" href="/forma_D/controladores/tareas/eliminar.php?tar_id=<?= base64_encode($tar['tar_id']) ?>"><i class="bi bi-trash me-2"></i>Eliminar</a></li>
                                     </ul>
                                 </div>
 
@@ -77,7 +82,7 @@ include_once '../../vistas/templates/header.php'; ?>
                     <?php endforeach ?>
                 <?php else : ?>
                     <tr>
-                        <str colspan="4">No hay registros</td>
+                        <td colspan="4">No hay registros</td>
                     </tr>
                 <?php endif ?>
             </tbody>

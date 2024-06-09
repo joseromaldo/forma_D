@@ -13,6 +13,14 @@ $_GET['asi_aplicacion'] = filter_var($aplicacion1, FILTER_VALIDATE_INT);
 try {
     $asignacion = new Asignar($_GET);
     $asignaciones = $asignacion->buscarnom();
+
+    if (!empty($asignaciones)) {
+        $resultado['mensaje'] = 'DATOS ENCONTRADOS'; 
+        $resultado['codigo'] = 1;
+    } else { 
+        $resultado['mensaje'] = 'No hay datos';
+        $resultado['codigo'] = 0;
+    }
   
 } catch (Exception $e) {
     $resultado = [
@@ -62,8 +70,8 @@ include_once '../../vistas/templates/header.php';
                                         Acciones
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="/controlAlumnos/vistas/asignar/modificar.php?asi_id=<?= base64_encode($asignacion1['asi_id']) ?>"><i class="bi bi-pencil-square me-2"></i>Modificar</a></li>
-                                        <li><a class="dropdown-item" href="/controlAlumnos/controladores/asignar/eliminar.php?asi_id=<?= base64_encode($asignacion1['asi_id']) ?>"><i class="bi bi-trash me-2"></i>Eliminar</a></li>
+                                        <li><a class="dropdown-item" href="/forma_D/vistas/asignar/modificar.php?asi_id=<?= base64_encode($asignacion1['asi_id']) ?>"><i class="bi bi-pencil-square me-2"></i>Modificar</a></li>
+                                        <li><a class="dropdown-item" href="/forma_D/controladores/asignar/eliminar.php?asi_id=<?= base64_encode($asignacion1['asi_id']) ?>"><i class="bi bi-trash me-2"></i>Eliminar</a></li>
                                     </ul>
                                 </div>
                             </td>

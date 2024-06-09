@@ -2,7 +2,7 @@
 require '../../modelos/Tareas.php';
 
 
-$_GET['gra_id'] = filter_var( base64_decode($_GET['gra_id']), FILTER_SANITIZE_NUMBER_INT);
+$_GET['tar_id'] = filter_var( base64_decode($_GET['tar_id']), FILTER_SANITIZE_NUMBER_INT);
 try {
     $grado = new Tareas($_GET);
     $eliminar = $grado->eliminar();

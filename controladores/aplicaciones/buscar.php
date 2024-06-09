@@ -8,13 +8,14 @@ try {
     $aplicacion = new Aplicacion ($_GET);
      
     $aplicaciones = $aplicacion->buscar();
+    
 
     $resultado = [
         'mensaje' => 'DATOS ENCONTRADOS',
         'datos' => $aplicaciones,
         'codigo' => 1
     ];
-    if (empty($armas)) {
+    if (empty($aplicaciones)) {
     
         $resultado['mensaje'] = 'No hay datos';
         $resultado['codigo'] = 0;
@@ -77,7 +78,7 @@ include_once '../../vistas/templates/header.php'; ?>
                     <?php endforeach ?>
                 <?php else : ?>
                     <tr>
-                        <str colspan="4">No hay registros</td>
+                        <td colspan="4">No hay registros</td>
                     </tr>  
                 <?php endif ?>
             </tbody>

@@ -55,10 +55,12 @@ class Tareas extends Conexion {
 
     
     public function buscartar() {
-        // return "hola";
-        // exit;
-        $sql = "select * from tareas  WHERE tar_app = $this->tar_app ";
-
+     
+        if (empty($this->tar_app)) {
+            $sql = "SELECT * FROM tareas";
+        } else {
+            $sql = "SELECT * FROM tareas WHERE tar_app = $this->tar_app";
+        }
       
         $resultado = self::servir($sql);
         return $resultado;
