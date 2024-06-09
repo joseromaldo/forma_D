@@ -41,7 +41,7 @@ include_once '../../vistas/templates/header.php'; ?>
 </div>
 <div class="row justify-content-center">
     <div class="col-lg-6">
-        <a href="../../vistas/grados/buscar.php" class="btn btn-primary w-100">Volver a los resultados</a>
+        <a href="../../vistas/programador/buscar.php" class="btn btn-primary w-100">Volver a los resultados</a>
     </div>
 </div>
 

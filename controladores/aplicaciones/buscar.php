@@ -14,6 +14,11 @@ try {
         'datos' => $aplicaciones,
         'codigo' => 1
     ];
+    if (empty($armas)) {
+    
+        $resultado['mensaje'] = 'No hay datos';
+        $resultado['codigo'] = 0;
+    }
 
 } catch (Exception $e) {
     $resultado = [
@@ -62,8 +67,8 @@ include_once '../../vistas/templates/header.php'; ?>
                                     Acciones
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/controlAlumnos/vistas/aplicaciones/modificar.php?apl_id=<?= base64_encode($aplicacion['apl_id'])?>"><i class="bi bi-pencil-square me-2"></i>Modificar</a></li>
-                                    <li><a class="dropdown-item" href="/controlAlumnos/controladores/aplicaciones/eliminar.php?apl_id=<?= base64_encode($aplicacion['apl_id'])?>"><i class="bi bi-trash me-2"></i>Eliminar</a></li>
+                                    <li><a class="dropdown-item" href="/forma_D/vistas/aplicaciones/modificar.php?apl_id=<?= base64_encode($aplicacion['apl_id'])?>"><i class="bi bi-pencil-square me-2"></i>Modificar</a></li>
+                                    <li><a class="dropdown-item" href="/forma_D/controladores/aplicaciones/eliminar.php?apl_id=<?= base64_encode($aplicacion['apl_id'])?>"><i class="bi bi-trash me-2"></i>Eliminar</a></li>
                                 </ul>
                             </div>
 

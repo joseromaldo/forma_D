@@ -2,8 +2,10 @@
  include_once '../templates/header.php' ;
 include_once '../templates/navbar.php' ;
 require '../../modelos/Grados.php';
+
     try {
-        $_GET['gra_id'] = filter_var( base64_decode($_GET['gra_id']), FILTER_SANITIZE_NUMBER_INT);
+        $_GET['gra_id'] = base64_decode($_GET['gra_id']);
+        
         $grado = new Grado($_GET);
         
         $grados = $grado->buscar();

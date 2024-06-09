@@ -14,12 +14,12 @@
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Grado
           </a>
-          <ul class="dropdown-menu bg-dark">
+          <ul class="dropdown-menu">
             <li class="nav-item">
-              <a class="nav-link" href="/controlAlumnos/vistas/grados/index.php">Crear Grado</a>
+              <a class="nav-link" href="/forma_D/vistas/grados/index.php">Crear Grado</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/controlAlumnos/vistas/grados/buscar.php">Buscar Grado</a>
+              <a class="nav-link" href="/forma_D/vistas/grados/buscar.php">Buscar Grado</a>
             </li>
           </ul>
         </li>
@@ -28,12 +28,12 @@
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Arma
           </a>
-          <ul class="dropdown-menu bg-dark">
+          <ul class="dropdown-menu">
             <li class="nav-item">
-              <a class="nav-link" href="/controlAlumnos/vistas/armas/index.php">Crear Arma</a>
+              <a class="nav-link" href="/forma_D/vistas/armas/index.php">Crear Arma</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/controlAlumnos/vistas/armas/buscar.php">Buscar Arma</a>
+              <a class="nav-link" href="/forma_D/vistas/armas/buscar.php">Buscar Arma</a>
             </li>
           </ul>
         </li>
@@ -42,12 +42,12 @@
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Programadores
           </a>
-          <ul class="dropdown-menu bg-dark">
+          <ul class="dropdown-menu">
             <li class="nav-item">
-              <a class="nav-link" href="/controlAlumnos/vistas/programador/index.php">Registrar programadores</a>
+              <a class="nav-link" href="/forma_D/vistas/programador/index.php">Registrar programadores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/controlAlumnos/vistas/programador/buscar.php">Buscar programadores</a>
+              <a class="nav-link" href="/forma_D/vistas/programador/buscar.php">Buscar programadores</a>
             </li>
           </ul>
         </li>
@@ -55,12 +55,12 @@
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Aplicaciones
           </a>
-          <ul class="dropdown-menu bg-dark">
+          <ul class="dropdown-menu">
             <li class="nav-item">
-              <a class="nav-link" href="/controlAlumnos/vistas/aplicaciones/index.php">Crear aplicaciones</a>
+              <a class="nav-link" href="/forma_D/vistas/aplicaciones/index.php">Crear aplicaciones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/controlAlumnos/vistas/aplicaciones/buscar.php">Buscar aplicaciones</a>
+              <a class="nav-link" href="/forma_D/vistas/aplicaciones/buscar.php">Buscar aplicaciones</a>
             </li>
           </ul>
         </li>
@@ -68,12 +68,12 @@
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Tareas
           </a>
-          <ul class="dropdown-menu bg-dark">
+          <ul class="dropdown-menu">
             <li class="nav-item">
-              <a class="nav-link" href="/controlAlumnos/vistas/tareas/index.php">Crear Tareas</a>
+              <a class="nav-link" href="/forma_D/vistas/tareas/index.php">Crear Tareas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/controlAlumnos/vistas/tareas/buscar.php">Buscar Tareas</a>
+              <a class="nav-link" href="/forma_D/vistas/tareas/buscar.php">Buscar Tareas</a>
             </li>
           </ul>
         </li>
@@ -81,12 +81,12 @@
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Asignar
           </a>
-          <ul class="dropdown-menu bg-dark">
+          <ul class="dropdown-menu">
             <li class="nav-item">
-              <a class="nav-link" href="/controlAlumnos/vistas/asignar/index.php"> Asignar aplicaciones</a>
+              <a class="nav-link" href="/forma_D/vistas/asignar/index.php"> Asignar aplicaciones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/controlAlumnos/vistas/asignar/buscar.php">Buscar asignaciones</a>
+              <a class="nav-link" href="/forma_D/vistas/asignar/buscar.php">Buscar asignaciones</a>
             </li>
           </ul>
         </li>
@@ -94,12 +94,12 @@
           <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Detalle
           </a>
-          <ul class="dropdown-menu bg-dark">
+          <ul class="dropdown-menu">
             <li class="nav-item">
-              <a class="nav-link" href="/controlAlumnos/vistas/detalle/index.php">Registro de detalles </a>
+              <a class="nav-link" href="/forma_D/vistas/detalle/index.php">Registro de detalles </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/controlAlumnos/vistas/detalle/buscar.php">Buscar detalles</a>
+              <a class="nav-link" href="/forma_D/vistas/detalle/buscar.php">Buscar detalles</a>
             </li>
           </ul>
         </li>

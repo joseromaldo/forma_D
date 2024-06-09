@@ -22,6 +22,11 @@ try {
         'datos' => $grados,
         'codigo' => 1
     ];
+    if (empty($programadores)) {
+    
+        $resultado['mensaje'] = 'No hay datos';
+        $resultado['codigo'] = 0;
+    }
 } catch (Exception $e) {
     $resultado = [
         'mensaje' => 'OCURRIO UN ERROR EN LA EJECUCIÓN',
@@ -50,7 +55,7 @@ include_once '../../vistas/templates/header.php'; ?>
 <div class="row justify-content-center">
     <div class="col-lg-10">
         <table class="table table-bordered table-hover">
-            <thead class="table-dark">
+            <thead class="table">
                 <tr>
                     <th>NO. </th>
                     <th>NOMBRES</th>
@@ -74,8 +79,8 @@ include_once '../../vistas/templates/header.php'; ?>
                                         Acciones
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="/controlAlumnos/vistas/programador/modificar.php?pro_id=<?= base64_encode($programadore['pro_id']) ?>"><i class="bi bi-pencil-square me-2"></i>Modificar</a></li>
-                                        <li><a class="dropdown-item" href="/controlAlumnos/controladores/programadores/eliminar.php?pro_id=<?= base64_encode($programador['pro_id']) ?>"><i class="bi bi-trash me-2"></i>Eliminar</a></li>
+                                        <li><a class="dropdown-item" href="/forma_D/vistas/programador/modificar.php?pro_id=<?= base64_encode($programadore['pro_id']) ?>"><i class="bi bi-pencil-square me-2"></i>Modificar</a></li>
+                                        <li><a class="dropdown-item" href="/forma_D/controladores/programadores/eliminar.php?pro_id=<?= base64_encode($programador['pro_id']) ?>"><i class="bi bi-trash me-2"></i>Eliminar</a></li>
                                     </ul>
                                 </div>
 
@@ -84,7 +89,7 @@ include_once '../../vistas/templates/header.php'; ?>
                     <?php endforeach ?>
                 <?php else : ?>
                     <tr>
-                        <str colspan="4">No hay registros</td>
+                        <td colspan="4">No hay registros</td>
                     </tr>
                 <?php endif ?>
             </tbody>
