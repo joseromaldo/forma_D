@@ -29,7 +29,7 @@ try {
     $error = $e2->getMessage();
 }
 ?>
-si
+
 
 <div class="container mt-5">
     <h1 class="text-center mt-3">Formulario para modificar el Programador</h1>
@@ -76,7 +76,7 @@ si
                 <input type="email" class="form-control" name="pro_correo" id="pro_correo" value="<?= $Programadores[0]['pro_correo'] ?? '' ?>" required>
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-warning w-100">Modificar</button>
+                <button type="submit" class="btn btn-warning w-100"><i class="bi bi-pencil-square me-2"></i>Modificar</button>
             </div>
         </form>
     </div>

@@ -31,7 +31,7 @@ require '../../modelos/Grados.php';
                 
                 <div class="row mb-3">
                     <div class="col">
-                        <button type="submit" class="btn btn-warning w-100">Modificar</button>
+                        <button type="submit" class="btn btn-warning w-100"><i class="bi bi-pencil-square me-2"></i>Modificar</button>
                     </div>
                 </div>
             </form>
