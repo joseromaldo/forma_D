@@ -55,7 +55,7 @@ try {
                 <input type="email" class="form-control" name="pro_correo" id="pro_correo" required>
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-primary btn-lg ">Guardar</button>
+                <button type="submit" class="btn btn-primary btn-lg w-100"><i class="bi bi-floppy me-2"></i>Guardar</button>
             </div>
         </form>
     </div>
