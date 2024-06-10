@@ -13,7 +13,7 @@
           <input type="text" name="arma_descripcion" id="arma_descripcion" class="form-control" required>
         </div>
         <div class="text-center">
-          <button type="submit" class="btn btn-primary"><i class="bi bi-floppy me-2"></i>Guardar</button>
+          <button type="submit" class="btn btn-primary w-100"><i class="bi bi-floppy me-2"></i>Guardar</button>
         </div>
       </form>
     </div>
