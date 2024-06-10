@@ -7,41 +7,21 @@ require '../../modelos/Asignar.php';
 require '../../modelos/Tareas.php';
 
 
-
-
-$asig_app = $_REQUEST['tar_id'] ?? null;
-$nombre = new Asignar(['asig_app' => $asig_app]);
-
+$nombre = new Asignar(['asig_app' => $tar_id]);
 $nombres = $nombre->buscarnom();
-
-$resultado = [
-    'mensaje' => 'DATOS ENCONTRADOS',
-    'datos' => $nombres,    
-    'codigo' => 1
-];
-
-if (empty($nombres)) {
-    $resultado['mensaje'] = 'No hay datos';
-    $resultado['codigo'] = 0;
-}
+$app_encontrada = !empty($nombres);
 
 
-$tar_app = $_REQUEST['tar_id'] ?? null;
-$tarea = new Tareas(['tar_app' => $tar_app]);
+$tarea = new Tareas(['tar_app' => $tar_id]);
 $tare = $tarea->buscartar();
-
+$tareas_encontradas = !empty($tare);
 
 
 $resultado = [
-    'mensaje' => 'DATOS ENCONTRADOS',
-    'datos' => $tare,
-    'codigo' => 1
+    'mensaje' => $app_encontrada ? 'DATOS ENCONTRADOS' : 'No hay datos',
+    'datos' => $app_encontrada ? $nombres : [],
+    'codigo' => $app_encontrada ? 1 : 0,
 ];
-
-if (empty($tare)) {
-    $resultado['mensaje'] = 'No hay datos';
-    $resultado['codigo'] = 0;
-}
 
 
 $totalTareas = count($tare);
