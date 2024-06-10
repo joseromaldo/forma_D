@@ -1,8 +1,6 @@
 <?php
 require '../../modelos/Asignar.php';
-// ini_set('display_errors', 1);
-// ini_set('display_startup_errors', 1);
-// error_reporting(E_ALL);
+
 
 $programador1 = $_GET['asi_programador'] ?? null;
 $aplicacion1 = $_GET['asi_aplicacion'] ?? null;
@@ -87,11 +85,4 @@ include_once '../../vistas/templates/header.php';
     </div>
 </div>
 
-<script>
-    // function alerta_eliminar(id){
-    //     if(confirm("¿Esta seguro que desea eliminar este registro?")){
-    //         location.href = "/crud_2024/controladores/producto/eliminar.php?prod_id=" + id
-    //     }
-    // }
-</script>
 <?php include_once '../../vistas/templates/footer.php'; ?>

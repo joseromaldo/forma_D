@@ -67,8 +67,7 @@ class Tareas extends Conexion {
     }
 
     public function buscartar_id() {
-        // return "hola";
-        // exit;
+       
         $sql = "select * from tareas  WHERE tar_id = $this->tar_id ";
 
   

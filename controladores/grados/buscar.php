@@ -6,7 +6,7 @@ $_GET['gra_nombre'] = htmlspecialchars( $_GET['gra_nombre']);
 try {
   
     $grado = new Grado($_GET);
-    // exit;
+    
     
     $grados = $grado->buscar();
 
@@ -88,13 +88,4 @@ include_once '../../vistas/templates/header.php'; ?>
     </div>        
 </div>        
 
-<script>
-
-    // function alerta_eliminar(id){
-    //     if(confirm("¿Esta segurdo que desea eliminar este registro?")){
-    //         location.href = "/crud_2024/controladores/producto/eliminar.php?prod_id=" + id
-    //     }
-    // }
-
-</script>
 <?php include_once '../../vistas/templates/footer.php'; ?>  

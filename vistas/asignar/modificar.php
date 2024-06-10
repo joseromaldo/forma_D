@@ -23,8 +23,7 @@ $Aplicaciones = $aplicacion->buscar();
 
 $programador = new Programador();
 $programadores = $programador->buscar();
-// echo var_dump($programadores);
-// exit;
+
 
 
 

@@ -22,7 +22,7 @@ try {
     $Grados = $grado->buscar();
     $arma = new Arma();
     $Armas = $arma->buscar();
-    //var_dump($Grados);
+    
 } catch (PDOException $e) {
     $error = $e->getMessage();
 } catch (Exception $e2) {

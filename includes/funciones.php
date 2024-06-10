@@ -9,8 +9,7 @@ function validarNIT($nit) : bool{
     for($i = $tamanio -  2; $i >= 0 ; $i--){
 
         $suma += $nit[$i] * $posicion;
-        // echo $nit[$i] . "pos: " . $posicion;
-        // echo "<br>";
+     
         $posicion++;
     }
     $residuo = $suma % 11;

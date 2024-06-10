@@ -9,7 +9,7 @@ if ($_POST['arma_descripcion'] != '') {
 
     try {
         $arma = new Arma($_POST);
-        //  var_dump($arma);
+        
         $resultado = $arma->guardar();
 
         $resultado = [

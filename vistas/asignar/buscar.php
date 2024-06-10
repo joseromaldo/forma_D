@@ -19,7 +19,7 @@ try {
 
 
     $programadores = $programador->buscar();
-    //var_dump($progras);
+    
 
 } catch (PDOException $e) {
     $error = $e->getMessage();
