@@ -87,7 +87,4 @@ include_once '../../vistas/templates/header.php'; ?>
     </div>        
 </div>        
 
-<script>
-
-</script>
 <?php include_once '../../vistas/templates/footer.php'; ?>  
