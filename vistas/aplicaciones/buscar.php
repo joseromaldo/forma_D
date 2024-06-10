@@ -19,7 +19,7 @@
                     <input type="text" name="apl_nombre" id="apl_nombre" class="form-control">
                 </div>
                 <div class="mb-3">
-                    <button type="submit" class="btn btn-info w-100">Buscar</button>
+                    <button type="submit" class="btn btn-info w-100"><i class="bi bi-search me-3"></i>Buscar</button>
                 </div>
             </form>
         </div>

@@ -13,7 +13,7 @@
 
                 <div class="row mb-3">
                     <div class="col">
-                        <button type="submit" class="btn btn-info w-100">Buscar</button>
+                        <button type="submit" class="btn btn-info w-100"><i class="bi bi-search me-3"></i>Buscar</button>
                     </div>
                 </div>
             </form>

@@ -56,7 +56,7 @@ try {
           <?php } ?>
         </select>
       </div>
-      <button type="submit" class="btn btn-primary mt-3">Guardar</button>
+      <button type="submit" class="btn btn-primary w-100 mt-3"><i class="bi bi-floppy me-2"></i>Guardar</button>
     </form>
   </div>
 </div>
