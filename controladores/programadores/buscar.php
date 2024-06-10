@@ -51,7 +51,7 @@ include_once '../../vistas/templates/header.php'; ?>
         <a href="../../vistas/grados/buscar.php" class="btn btn-primary w-100">Volver al formulario de busqueda</a>
     </div>
 </div>
-<h1 class="text-center">Listado de grados</h1>
+<h1 class="text-center">Listado de programadores</h1>
 <div class="row justify-content-center">
     <div class="col-lg-10">
         <table class="table table-bordered table-hover">

@@ -42,7 +42,7 @@ include_once '../../vistas/templates/header.php'; ?>
 </div>
 <div class="row mb-4 justify-content-center">
     <div class="col-lg-6">
-        <a href="../../vistas/grados/buscar.php" class="btn btn-primary w-100">Volver al formulario de busqueda</a>
+        <a href="../../vistas/tareas/buscar.php" class="btn btn-primary w-100">Volver al formulario de busqueda</a>
     </div>
 </div>
 <h1 class="text-center">Listado de tareas</h1>

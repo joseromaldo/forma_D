@@ -56,7 +56,7 @@ if($_POST['tar_app'] != '' ){
     </div>
     <div class="row justify-content-center">
         <div class="col-lg-6">
-            <a href="../../vistas/detalle/buscar.php?detalle=<?= $_POST['detalle'] ?>" class="btn btn-info">Volver al formulario</a>
+            <a href="../../vistas/detalle/buscar.php?detalle=<?= $_POST['detalle'] ?>" class="btn btn-info w-100">Volver al formulario</a>
     </div>
 
 
